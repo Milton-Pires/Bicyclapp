@@ -5,16 +5,88 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
+
     <ImageView
         android:layout_width="238dp"
         android:layout_height="216dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/logo"
-        android:layout_marginLeft="90dp"
+
         />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Insira seu e-mail"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baselineemail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="50">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Digite sua senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baselinelock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="20">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
+        android:id="@+id/txtEsqueceu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuário:"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:text="Esqueceu a senha?" />
+
+    <TextView
+        android:id="@+id/txtCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtEsqueceu"
+        android:layout_gravity="end"
+        android:text="Cadastrar-se" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#1DA998"
+        android:padding="15dp"
+        android:text="entrar"
+        android:textAllCaps="true"
+        android:textSize="18dp"
+        app:cornerRadius="20dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+
 </LinearLayout>
