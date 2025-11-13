@@ -5,16 +5,177 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuPrincipalActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MenuPrincipalActivity">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardBike"
+        style="@style/Widget.Material3.CardView.Outlined"
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="10dp"
         android:clickable="true"
         android:focusable="true"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp">
 
-        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgBike"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Bike_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bicicletas"
+                android:fontFamily="@font/michromaregular"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLocalizacao"
+        style="@style/Widget.Material3.CardView.Outlined"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgLocalizacao"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Localizacao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Localização"
+                android:fontFamily="@font/michromaregular"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCalendario"
+        style="@style/Widget.Material3.CardView.Outlined"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgCalendario"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Calendario" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendario"
+                android:fontFamily="@font/michromaregular"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCalendario"
+        style="@style/Widget.Material3.CardView.Outlined"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgCalendario"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Calendario" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendario"
+                android:fontFamily="@font/michromaregular"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
 </LinearLayout>
