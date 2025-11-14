@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BicicletasActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVoltar"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:text="voltar"
+        android:textAllCaps="true"
+        android:textColor="#FD9700"
+        app:cornerRadius="6dp"
+        app:icon="@drawable/baseline_arrow_back"
+        app:iconTint="#FD9700"
+        app:strokeColor="#FD9700"
+        app:strokeWidth="2sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutBicicletas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVoltar"
+        app:tabGravity="fill"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="#925900"
+        app:tabIndicatorHeight="2dp"
+        app:tabInlineLabel="false"
+        app:tabMode="fixed"
+        app:tabTextColor="#FD9700">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_urbana_icon"
+            android:text="Urbana" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_speed_icon"
+            android:text="Speed" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_gravel_icon"
+            android:text="Gravel" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_trail_icon"
+            android:text="Trail" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagerBiclicletas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayoutBicicletas"
+        android:background="#FFC107"/>
+</RelativeLayout>
